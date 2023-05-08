@@ -1,0 +1,162 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(240, 248, 255, 0.836);
+}
+
+.container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.33fr 1fr;
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(124, 130, 136, 0.836);
+}
+
+.container .card-one {
+    padding: 20px 20px;
+    padding-left: 35px;
+    background-color: rgb(184, 178, 178);
+    width: 100%;
+    color: #313131;
+}
+
+.img-profile {
+    display: inlen-flex;
+    margin-bottom: 5px;
+    margin-left: -15px;
+    width: 220px;
+    height: 220px;
+    border: 4px solid #000000;
+    background: center top;
+    border-radius: 50%;
+    background-image: url(foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-size: 100%;
+}
+
+.container.card-one.contact-box {
+    margin-top: 10px;
+}
+
+.container.card-one.contact-box>* {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.container.card-one.contact-box>*.text {
+    display: inline-flex;
+    word-break: break-all;
+}
+
+.container .card-one .personal-box {
+    margin-top: 35px;
+}
+
+.container .card-one .personal-box .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(9, 9, 9);
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.container .card-one .personal-box .dot.active {
+    background-color: gold;
+}
+
+.container .card-two {
+    background: #575454;
+}
+
+.container .card-one .hoby-box .logo {
+    margin: 10px 0px;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    font-size: 2.8em;
+    grid-row-gap: 15px;
+}
+
+.container .card-two {
+    background-color: #295c9a;
+    padding: 40px 20px;
+    padding-right: 75px;
+    color: azure;
+}
+
+.container .card-two .head-title {
+    font-size: 2.1em;
+    color: burlywood;
+    font-weight: 400;
+}
+
+.container .card-two .box {
+    display: inline-block;
+    padding: 2px 70px 2px 20px;
+    margin-left: -20px;
+    margin-top: 25px;
+    background-color: burlywood;
+    color: #000000;
+}
+
+.container .card-two .group-1 .dec {
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.container .card-two .group-2 .dec {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.container .card-two .group-2 .dec ul {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.container .card-two .group-2 .dec ul::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -22px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: burlywood;
+}
+
+.container .card-two .group-2 .dec ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+.container .card-two .group-2 .dec ul li::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -18px;
+    height: 60px;
+    border-left: 2px solid burlywood;
+}
+
+.container .card-two .group-2 .dec ul:last-of-type-li::before {
+    content: none;
+}
+
+.container .card-two .group-2 .dec ul li div:last-of-type {
+    color: burlywood;
+    font-weight: bold;
+}
